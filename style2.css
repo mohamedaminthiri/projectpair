@@ -1,0 +1,148 @@
+body{
+background: #4286f4;  /* fallback for old browsers */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*div {
+  width: 300px;
+  border: 15px solid #F5F5F5;
+  padding: 50px;
+  margin: 20px;
+}*/
+.coursesbody{
+
+background: #4286f4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffdde1, #ee9ca7);
+
+}
+#special2{
+	width: 400%;
+	margin-left: 350px;
+	 border-radius: 18px;
+}
+#special3,#special4,#special5,#special6{
+
+	width: 400%;
+	margin-bottom: -300px;
+	margin-left: 350px;
+	 border-radius: 18px;
+}
+
+
+
+
+.task{
+margin-left: 1200px;
+
+}
+#coursesbody1{
+	
+	height:1300px;
+  width: 1500px;
+  background-color:#4286f4;
+  display: flex;
+  justify-content: space-between;
+}
+#cours2{
+  
+  height:1300px;
+  width: 1500px;
+  background-color:#4286f4;
+  display: flex;
+  justify-content: space-between;
+  margin-top:-500px;
+  margin-left:100
+}
+
+.col-lg-4 {
+  
+  max-width: 800px;
+  height: 600px;
+  margin-left: 120px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: arial;
+  box-shadow: 0px 6px 6px 0px #bdc3c7;
+  background-color: #bdc3c7;
+}
+
+#div5 {
+  
+  max-width: 800px;
+  height: 600px;
+  margin-left: 30px;
+  margin-right:200px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: arial;
+  box-shadow: 0px 6px 6px 0px #bdc3c7;
+  background-color: #bdc3c7;
+}
+#div6{
+  
+  max-width: 800px;
+  height: 600px;
+  margin-left: 120px;
+  margin-right:200px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: arial;
+  box-shadow: 0px 6px 6px 0px #bdc3c7;
+  background-color: #bdc3c7;
+}
+#div7 {
+  
+  max-width: 800px;
+  height: 600px;
+  margin-left: 30px;
+  margin-right:200px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: arial;
+  box-shadow: 0px 6px 6px 0px #bdc3c7;
+  background-color: #bdc3c7;
+}
+
+
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.col-lg-4 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 10px;
+
+}
+
+.col-lg-4 button:hover {
+  opacity: 0.7;
+}
+
+.teacher{
+
+  margin-top: 40px;
+}
+
+.origin{
+ max-width: 800px;
+  height: 600px;
+  margin-left: 150px;
+  margin-top: -20px;
+  text-align: center;
+  font-family: arial;
+  box-shadow: 0px 6px 6px 0px rgba(2,25,65,0.08);
+  border: 15px solid #F5F5F5;
+
+}
+

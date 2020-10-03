@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transcript</title>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript"></script>
+
+<script>
+	function init() {
+         
+var x=localStorage.getItem("fullname");
+var res=""
+for(var i=0;i<transcripts.length;i++){
+	if(transcripts[i]["fullname"] === x){
+    for(var j=0;j<transcripts[i]["courses"].length;j++)
+    	res=res+transcripts[i]["courses"][j].title+"  "+transcripts[i]["courses"][j].note+"  "+transcripts[i]["courses"][j].coef+"\n"
+        
+	}
+
+}
+document.getElementById("area1").value=res
+}
+		
+window.onload = init;
+
+
+function imprimer_page(){
+  window.print();
+}
+
+</script>
+</head>
+<body>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+
+
+}
+#area1{
+width:800px;
+ height:600px;
+ font-size: 40px;
+
+}
+#impression{
+width:300px;
+ height:80px;
+ font-size: 20px;	
+}
+</style>
+<body>
+
+
+<div class="navbar">
+  <a class="active" href="courses.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="transcript.html">transcript</a> 
+  <a href="exam.html">exam online </a> 
+  <a href="task.html">Projects</a> 
+  <a href="index.html">Log Out</a>
+  
+</div>
+<center><p style="font-size: 40px">transcript</p><form>
+  <input id="impression" name="impression" type="button" onclick="imprimer_page()" value="Imprimer cette page" />
+</form></center>
+<center><div class="col">
+        <div class="hide-md-lg">
+        </div>
+    </div>
+<center>
+	
+	<textarea id="area1"></textarea>
+      
+    
+</center>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

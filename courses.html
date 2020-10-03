@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Example</title>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script src=https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+
+
+}
+/* #user{
+
+  	width: 300px;
+  	height: 30px;
+  }
+  #textar{
+  	margin-left: 50px;
+  	width: 300px;
+  	height: 60px;
+  }*/
+
+
+</style>
+	
+</head>
+<body>
+<div class="navbar">
+  <a class="active" href="courses.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="transcript.html">transcript</a>  
+  <a href="exam.html">exam online </a> 
+  <a href="task.html">Projects</a> 
+  <a href="index.html">Log Out</a>
+  
+</div>
+
+<br>
+<div id="coursesbody1">
+<!-- 	<p><a href="C:\Users\songul\Desktop\pair pro\src\1.mp4" download><i class="fa fa-youtube-play" style="font-size:48px;color:red"></i>videos</a></p>
+	<br><p>or</p><br> -->
+	
+<!-- <a href="./src/DB.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:36px;color:red"></i>pdf</a></p> -->
+
+<div class="col-lg-4">
+  <img src="featured1.png" alt="Denim Jeans" style="width:100%">
+  <h1 style="font-size: 35px">Angular</h1>
+  <p class="teacher">By Prof.Thomas Edison</p>
+  <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.</p>
+  <p>Type:Pdf</p>
+  <p>Date Of Publication :18/19/2018</p>
+  <p><a href="./src/DB.pdf" target="_blank"><button>Start to Learn</button></a></p>
+</div>
+<hr>
+<div id="div5"class="col-lg-4">
+  <img src="featured1.png" alt="Denim Jeans" style="width:100%">
+  <h1 style="font-size: 35px">Javascript</h1>
+  <p class="teacher">By Prof.Thomas Edison</p>
+  <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.</p>
+  <p>Type:Pdf</p>
+  <p>Date Of Publication :25/08/2019</p>
+  <a href="./src/DB.pdf" target="_blank"><button>Start to Learn</button></a>
+
+</div>
+
+</div>
+<div id="cours2">
+<div id="div6"class="col-lg-4">
+  <img src="featured1.png" alt="Denim Jeans" style="width:100%">
+  <h1 style="font-size: 35px">React Js</h1>
+  <p class="teacher">By Prof.Thomas Edison</p>
+  <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.</p>
+  <p>Type: Video</p>
+  <p>Date Of Publication :17/04/2020</p>
+  <p><a href="./src/1.mp4" target="_blank"><button>Start to Learn</button></a></p>
+</div>
+<div id="div7"class="col-lg-4">
+  <img src="featured1.png" alt="Denim Jeans" style="width:100%">
+  <h1 style="font-size: 35px">Android</h1>
+  <p class="teacher">By Prof.Thomas Edison</p>
+  <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.</p>
+   <p>Type: Video</p>
+   <p>Date Of Publication :18/03/2020</p>
+  <p><a href="./src/1.mp4" target="_blank"><button>Start to Learn</button></a></p>
+
+</div>
+</div>
+<!-- <div class="col-lg-4">
+  <img src="featured1.png" alt="Denim Jeans" style="width:100%">
+  <h1 style="font-size: 35px">web developement</h1>
+  <p class="teacher">By Prof.Thomas Edison</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Start to Learn</button></p>
+</div>
+
+  -->
+
+
+
+<!-- <div class="task">
+	<center><button class="open-button"  id="btn15" onclick="openForm()">Add Task<img src="clip.png"></center></button>
+</div>
+
+<div class="chat-popup" id="myForm">
+ 
+    <label for="msg"><b>Task</b></label>
+    <textarea placeholder="Add Task Here.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  
+</div> -->
+
+</body>
+</html>

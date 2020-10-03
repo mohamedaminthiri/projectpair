@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <title>exam online</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+	function init() {
+      
+
+		navigator.mediaDevices.getUserMedia({ audio: false, video: { width: 800, height: 600 } }).then(function(mediaStream) {
+			
+			var video = document.getElementById('sourcevid');
+			video.srcObject = mediaStream;
+			
+			video.onloadedmetadata = function(e) {
+				video.play();
+			};
+
+		  
+		}).catch(function(err) { console.log(err.name + ": " + err.message); });
+
+	}
+
+	function clone(){
+		var vivi = document.getElementById('sourcevid');
+		var canvas1 = document.getElementById('cvs').getContext('2d');
+		canvas1.drawImage(vivi, 0,0, 150, 112);
+		var base64=document.getElementById('cvs').toDataURL("image/png");	//l'image au format base 64
+		document.getElementById('tar').value='';
+		document.getElementById('tar').value=base64;
+	}
+
+	window.onload = init;
+
+	</script>
+	  <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+
+
+}
+</style>
+</head>
+
+<body>
+	<div class="navbar">
+  <a class="active" href="courses.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="transcript.html">transcript</a> 
+  <a href="exam.html">exam online </a> 
+  <a href="task.html">Projects</a> 
+  <a href="index.html">Log Out</a>
+  
+</div>
+<video id="sourcevid" height='200' width='200' autoplay="true" ; style='display:inline,margin-top:-300px'></video>
+		
+		<div id="main" style='height:150px;width:150px;margin:auto;display:inline'>
+		
+        <canvas id="cvs" height='150' width='150'></canvas>
+		
+		</div>
+		<div style='margin-top:-200px'>
+		<center><div style='font-size: 30px margin-top:-500px'>
+	<label style="font-size: 30px">checkpoint online</label>
+    </div>
+    <br>
+	<div>
+		email:<input id="emailexam" type="email"><br>
+		<br>
+		fullname:<input id="fullnameexam" type="text">
+	<h1>Questions</h1>
+  <p>Inside which HTML element do we put the JavaScript?</p>
+  <input type="radio" id="male" name="question1" value="script">
+  <label for="male">script</label><br>
+  <input type="radio" id="female" name="question1" value="scripting">
+  <label for="female">scripting</label><br>
+  <input type="radio" id="other" name="question1" value="js">
+  <label for="other">js</label>
+  <br>  
+  <p>What is the correct JavaScript syntax to change the content of the HTML element below?</p>
+  <input type="radio" id="age1" name="question2" value="#dimo.innerHTML=hello world">
+  <label for="age1">#dimo.innerHTML=hello world</label><br>
+  <input type="radio" id="age2" name="question2" value='document.getElementById(demo).innerHTML=hello world'>
+  <label for="age2">document.getElementById("demo").innerHTML="hello world"</label><br> 
+  <input type="radio" id="age2" name="question2" value='document.getElementByName(demo).innerHTML=hello world'>
+  <label for="age2">document.getElementByName("demo").innerHTML="hello world"</label><br>  
+ <br>  
+  <p>What is the correct JavaScript syntax to change the content of the HTML element below?</p>
+  <input type="radio" id="age1" name="question3" value="#dimo.innerHTML=hello world">
+  <label for="age1">#dimo.innerHTML=hello world</label><br>
+  <input type="radio" id="age2" name="question3" value='document.getElementById(demo).innerHTML=hello world'>
+  <label for="age2">document.getElementById("demo").innerHTML="hello world"</label><br> 
+  <input type="radio" id="age2" name="question3" value='document.getElementByName(demo).innerHTML=hello world'>
+  <label for="age2">document.getElementByName("demo").innerHTML="hello world"</label><br> 
+  <br>  
+  <button id="bchekpoint" style='width:200px' >Submit</button>  
+</div>
+</div>
+ </center> 
+
+        <!-- <video id="sourcevid" height='300' width='300' autoplay="true" ; style='display:inline,margin-top:-300px'></video>
+		
+		<div id="main" style='height:150px;width:150px;margin:auto;display:inline'>
+		
+        <canvas id="cvs" height='150' width='150'></canvas>
+		
+		</div> -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+ 
